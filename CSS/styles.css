@@ -1,0 +1,995 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,700);
+/*font-family: 'Raleway', sans-serif;*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+/*font-family: 'Open Sans', sans-serif;*/
+
+
+/*Selector Universal*/
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Raleway', sans-serif;
+	margin: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	/* upper-alpha | upper-roman | upper-latin | url(../images/ser1.png) | disc | circle | square*/
+}
+
+header{
+	max-width: 1200px;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 15px;
+	margin: 0 auto;
+	background-color: #fff;
+	position: fixed;
+	z-index: 600;	
+}
+
+.cleaner{
+	clear: both;
+}
+
+nav{
+	float: right;
+}
+nav li{
+	display: inline-block;
+	margin-left: 15px;
+}
+nav a{
+	color: #333;
+}
+
+.contenedor-inicial{
+	margin-top: 60px;
+	min-height: 500px;
+	background: url(../images/indexbanner-bg3.jpg) no-repeat center top scroll;
+}
+
+.contenedor-inicial-contact{
+	margin-top: 60px;
+	min-height: 500px;
+	background: url(../images/indexbanner-bg2.jpg) no-repeat center top scroll;
+	background-size: 100%;*/
+}
+
+.wrapper{
+	max-width: 1200px;
+	margin: auto;
+	/*background-color: rgba(255,0,0,0.5);*/
+}
+
+.main-title{
+	color: #fff;
+	font-size: 40px;
+	margin: 280px 0 0;
+	display: inline-block;
+}
+
+/*selector de hmno adyacente
+da estilo a un elemento que se encuentre INMEDIATAMENTE después de otro, siempre y cuando sean hermanos
+*/
+
+.main-title + p{
+	color: #fff;
+	font-size: 18px;
+	width: 45.83333333%;
+	line-height: 37px;
+}
+
+.buscador{
+	position: relative;
+	margin-top: 230px;
+}
+
+.buscador input[type=text]{
+	width: 84%;
+	height: 70px;
+	border: solid 1px #ccc;
+	font-family: inherit;
+	font-size: 20px;
+	padding: 0 30px;
+	/*padding: 0 210px 0 30px;*/
+}
+
+.buscador button{
+	/*width: 200px;*/
+	width: 16%;
+
+	height: 70px;
+	background-color: #63BBDE;
+	color: #fff;
+	font-family: inherit;
+	font-size: 20px;
+	border: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	/*COLOR PICKER (CTRL + SHIFT + C)*/
+}
+
+/***************************************************************/
+/******************** SERVICIOS DESTACADOS *********************/
+/***************************************************************/
+
+.servicios-destacados{
+	margin-top: 150px;
+}
+
+.servicios-destacados article{
+	text-align: center;
+	/*width: 300px;*/
+	width: 25%;
+	float: left;
+	padding: 0 10px;
+	position: relative;
+	/*line-height: 0;*/
+}
+
+.servicios-destacados article h2{
+	font-size: 18px;
+	font-family: 'Raleway', sans-serif;
+	color: #1b1b1b;
+	font-variant: small-caps;
+}
+
+.servicios-destacados article p{
+	font-size: 14px;
+	font-family: 'Raleway', sans-serif;
+	color: #1b1b1b;
+}
+
+
+
+/*.servicios-destacados article:hover{
+	background-color: #333;
+}*/
+
+.servicios-destacados article img{
+	width: 33.333333333333%;
+	transition: all 250ms ease-in;
+	-webkit-transition: all 250ms ease-in;
+	border-radius: 50%;
+}
+
+.servicios-destacados article:hover img{
+	transform: rotate(360deg) scale(1.2);
+	-ms-transform: rotate(360deg) scale(1.2);
+	-webkit-transform: rotate(360deg) scale(1.2);
+	box-shadow: 0 0 12px black;
+}
+
+
+
+/***************************************************************/
+/************* CARACTERISTICAS DE LOS SERVICIOS ****************/
+/***************************************************************/
+
+.subtitle{
+	font-size: 40px;
+	text-align: center;
+	margin: 100px 0 30px;
+	padding: 25px;
+	color: #233141;
+}
+
+/*selector de hermano adyacente*/
+.subtitle + p{
+	text-align: center;
+	font-size: 18px;
+	color: #1b1b1b;
+}
+
+.caracteristicas{
+	float: left;
+	/*width: 350px;*/
+	width: 29.166666666667%;
+	margin-top: 50px;
+}
+
+.caract-izq{
+	height: 600px;
+	position: relative;
+}
+.imagen-mitad{
+	/*width: 300px;*/
+	width: 25%;
+	float: left;
+	margin: 50px 8.333333333333% 0;	
+}
+.imagen-mitad img{
+	width: 100%;
+}
+
+.caract-izq article{
+	position: absolute;
+	text-align: right;
+	padding-right: 60px;
+}
+
+.izq1{
+	right: 10px;
+	top: 10px;
+}
+
+.izq2{
+	right: 10px;
+	top: 210px;
+}
+
+.izq3{
+	right: 10px;
+	top: 410px;
+}
+
+.caract-izq article img{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.caract-izq article h3{
+	color: #1b1b1b;
+	font-size: 20px;
+	font-variant: small-caps;
+
+}
+
+.caract-izq article p{
+	color: #1b1b1b;
+	font-size: 16px;
+	padding: 0;
+	margin-top: -10px;
+
+}
+
+.caract-der{
+	height: 600px;
+	position: relative;
+
+}
+
+.caract-der article{
+	position: absolute;
+	padding-left: 60px;
+	text-align: left;
+}
+
+.der1{
+	right: 10px;
+	top: 10px;
+}
+
+.der2{
+	right: 10px;
+	top: 210px;
+}
+
+.der3{
+	right: 10px;
+	top: 410px;
+}
+
+.caract-der article img{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.caract-der article h3{
+	color: #1b1b1b;
+	font-size: 20px;
+	font-variant: small-caps;
+
+}
+
+.caract-der article p{
+	color: #1b1b1b;
+	font-size: 16px;
+	padding: 0;
+	margin-top: -10px;
+
+}
+
+/***************************************************************/
+/********************** LISTA DE PRECIOS ***********************/
+/***************************************************************/
+
+
+.contenedor-secundario{
+	background: url(../images/pricing-bg.jpg) center top no-repeat;
+	min-height: 400px;
+	margin-top: -80px;
+	// border-top:solid 5px red ;
+}
+
+.contenedor-secundario h2{
+	font-size: 40px;
+	text-align: center;
+	margin: 100px 0 30px;
+	padding: 25px;
+	color: #233141;
+}
+
+
+.contenedor-secundario h2 + p{
+	text-align: center;
+	font-size: 18px;
+	color: #1b1b1b;
+}
+
+.pricing-boxes{
+	margin: 80px 0;
+	// border: dotted 3px green;
+}
+
+table, td, tr{
+	padding: 0;
+	border-spacing: 0;
+	// border:solid 1px #000; 
+}
+
+.box-price{
+	/*width: 270px;*/
+	width: 22.5%;
+	float: left;
+	background-color: #fff;
+	box-shadow: 0 0 5px rgba(0,0,0,0.3);
+	padding: 15px;
+	margin-right: 3.333333333333%;
+}
+
+.last{
+	margin-right: 0;
+}
+
+.box-price table{
+	width: 100%;
+	text-align: center;
+}
+
+.box-price table h4{
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.box-price table h3{
+	font-size: 70px;
+	margin:0;
+	padding-top: 20px;
+	line-height: 70px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+}
+
+.box-price table h3 i{
+	font-style: normal;
+}
+
+.box-price table h3 sup{
+	display: inline-block;
+	vertical-align: top;
+	font-size: 16px;
+	font-weight: 400;
+	position: relative;
+	top: 5px;
+}
+
+.box-price table b{
+	font-weight: 400;
+	color: #7B7B7B;
+	font-size: 14px;
+	display:block;
+	border-bottom: solid 1px #ccc;
+	padding-bottom: 20px;
+}
+
+.box-price table td{
+	padding: 15px 10px;
+
+}
+.table-text{
+	color:#1b1b1b;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	padding: 15px 1.25%;
+}
+
+.blue-txt{
+	color: #67d6ff;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	padding: 15px;
+}
+
+.yellow-txt{
+	color: #f9d423;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	padding: 15px;
+}
+
+.orange-txt{
+	color: #ff9359;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	padding: 15px;
+}
+
+.red-txt{
+	color: #f75f40;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	padding: 15px;
+}
+
+.box-price table td a{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	font-weight: 600;
+	color: white;
+	letter-spacing: 1px;
+	
+ 
+}
+.A2{
+	background-color: #00adf0;
+	border-radius: 10px;
+
+}
+
+
+
+/***************************************************************/
+/************************ PIE DE PAGINA ************************/
+/***************************************************************/
+
+
+.footer1{
+	background-color: #233141;
+	height: 200px;
+	width: 100%;
+}
+
+.footer1 p{
+	font-size:25px;
+	color: #fff;
+	/*display: inline-block;*/
+	padding: 65px;
+	text-align: center;
+	/*border: dotted 1px red;*/
+	font-family: 'Open Sans', sans-serif;
+	font-weight: lighter;
+}
+
+.f1{
+	font-size: 40px;
+	color: #00adf0;
+	font-weight: bold;
+	font-style: normal;
+}
+
+.footer2{
+	color: #c2c5cc;
+	font-size: 14px;
+	background-color: #151d26;
+	height: 100px;
+	margin-top: -15px;
+	width: 100%;
+}
+
+.footer2 p{
+	display: inline-block;
+	float: left;
+	width: 50%;
+	height: 80;
+	margin: 10px 0;
+	text-align: left;
+	padding: 25px 0 25px 35px;
+
+}
+
+.footer2 a{
+	text-decoration: none;
+	color: #c2c5cc;
+}
+
+.footer2 nav{
+	display: inline-block;
+	float: left;
+	width: 50%;
+	height: 80px;
+	margin: 10px 0;
+	text-align: right;
+	padding: 25px 35px 25px 0;
+}
+
+
+/***************************************************************/
+/************************* CONTACTOS ***************************/
+/***************************************************************/
+
+
+.title-form{
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	height: 200px;
+	padding: 30px;
+}
+
+.title-form h2{
+	font-size: 40px;
+	padding-top: 30px;
+}
+
+.title-form p{
+	padding-top: 10px;
+	margin-top: -25px;
+	font-size: 18px;
+	color:#7a7c80;	
+}
+
+.contenedor-formulario{
+	max-width: 1200px;
+	margin: auto;
+	height: 600px;
+	margin-top: 30px;
+}
+
+.box-form{
+	width: 100%;
+	float: left;
+	margin-top: 30px;
+
+
+}
+
+.form-der{
+	float: left;
+	width: 45%;
+	margin-left: 4%;
+	border:none;
+
+}
+
+.form-izq{	
+	float: left;
+	width: 45%;
+	border: none;
+	margin-right: 4%;
+	padding:0;
+}
+
+.boton{
+	float: left;
+	border: dotted 1px green;
+	margin: 20px 42%;
+	width: 15%;
+	line-height: 50px;
+	color:#fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-variant: small-caps;
+	background-color: #00adf0;
+	font-weight: bolder;
+	letter-spacing: 5px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px #1b1b1b;
+
+
+
+}
+
+
+.box-form input[type=text]{
+	width: 95%;
+	border:dotted 1px #ccc;
+	height: 50px;
+	margin:10px 2%;
+	border-radius: 5px;
+	color:#ccc;
+	letter-spacing: 2px;
+	font-size: 14px;
+
+}	
+
+.box-form textarea{
+	width: 95%;
+	margin: 15px 2%;
+	height: 200px;
+	border-color: none;
+	color:#ccc;
+	font-size: 16px;
+	padding: 15px;
+
+}
+
+
+
+/***************************************************************/
+/*********** RESPONSIVE MEDIUM (768px a 992px) ****************/
+/***************************************************************/
+
+@media (max-width: 992px){
+	.wrapper{
+		width: 96%;
+	}
+
+	header{
+	max-width: 96%;
+	}
+
+	.main-title{
+	font-size: 32px;
+	margin: 250px 0 0;
+	}
+
+	.main-title + p{
+	font-size: 16px;
+	}
+
+	.buscador{
+		margin-top: 280px;
+	}
+
+	.buscador button{
+		font-size: 16px;
+	}
+
+	header nav{
+		display: inline-block;
+		float: none;
+		margin-left: 18%;
+	}
+	.servicios-destacados article{
+		width: 50%;
+		min-height: 380px;
+	}
+
+
+	.subtitle{
+	font-size: 30px;
+	}
+
+	.subtitle + p{
+		font-size: 15px;
+	}
+
+
+	.caract-izq{
+	height: 450px;
+	}
+	
+	.izq2{
+		top: 160px;
+	}
+
+	.izq3{
+		top: 310px;
+	}
+
+
+	.caract-izq article h3{
+		font-size: 16px;
+	}
+
+	.caract-izq article p{
+		font-size: 12px;
+	}
+
+	.caract-der{
+		height: 450px;
+	}
+
+	.der2{
+		top: 160px;
+	}
+
+	.der3{
+		top: 310px;
+	}
+
+	.caract-der article h3{
+		font-size: 16px;
+	}
+
+	.caract-der article p{
+		font-size: 12px;
+	}
+
+	.contenedor-secundario h2{
+		font-size: 30px;
+	}
+
+	.contenedor-secundario h2 + p{
+		font-size: 15px;
+	}
+
+	.box-price{
+		width: 45%;
+		margin: 2.5%;
+	}
+	
+
+	.footer1{
+		height: 150px;
+	}
+
+	.footer1 p{
+		font-size:20px;
+		padding: 35px;
+	}
+
+	.f1{
+		font-size: 35px;
+	}
+
+	.footer2{
+		font-size: 12px;
+		height: 100px;
+	}
+
+	.footer2 p{
+		display: inline-block;
+		width: 100%;
+		height: 30px;
+		text-align: center;
+
+	}
+
+	.footer2 nav{
+		display: inline-block;
+		width: 100%;
+		height: 30px;
+		text-align: center;
+		padding: 0;
+		margin-top: -10px;
+	}
+
+}
+
+
+/***************************************************************/
+/*********** RESPONSIVE SMALL (540px a 768px) ****************/
+/***************************************************************/
+
+
+@media (max-width: 768px){
+	header{
+		position: static;
+		text-align: center;
+	}
+	header nav{
+		display: block;
+		margin-left: 0;
+	}
+	header nav li{
+		display: block;
+		padding: 10px 0;
+	}
+	.contenedor-inicial{
+		margin-top: 0;
+		background: none;
+	}
+	/* agrupación de selectores */
+	.main-title + p{
+		display: none;
+	}
+	.buscador{
+		margin-top: 0;
+	}
+
+	.buscador button{
+		font-size: 12px;
+	}
+
+
+	.caracteristicas{
+		float: none;
+		width: 100%;
+	}
+
+	.caract-izq{
+		height: 300px;
+	}
+
+	.imagen-mitad{
+		float: none;
+		width: 50%;
+		margin: 50px auto;
+	}
+
+	.caract-izq article{
+		text-align: left;
+		padding-right: 0;
+		padding-left: 60px;
+	}
+
+	.izq2{
+		top: 110px;
+	}
+
+	.izq3{
+		top: 210px;
+	}
+
+	.caract-izq article h3{
+		font-size: 15px;
+	}
+
+	.caract-izq article p{
+		font-size: 12px;
+	}
+
+	.caract-der{
+		height: 300px;
+	}
+
+
+	.der2{
+		top: 110px;
+	}
+
+	.der3{
+		top: 210px;
+	}
+
+	.caract-der article h3{
+		font-size: 15px;
+	}
+
+	.caract-der article p{
+		font-size: 12px;
+
+	}
+
+	.caract-izq article img{
+		left: 0;
+		/*right: auto;*/
+	}
+	.contenedor-secundario{
+		background-size: 100%;
+		margin-top: 30px;
+	}
+}
+
+
+/***************************************************************/
+/*********** RESPONSIVE EXTRASMALL (menor a 540px) *************/
+/***************************************************************/
+
+
+@media (max-width: 480px){
+	
+	/************/
+
+	.main-title{
+		display: none;
+	}
+
+
+	.main-title + p{
+		display: none;
+	}
+
+	.buscador{
+		margin-top: 30px;
+	}
+
+	.buscador input[type=text]{
+		height: 50px;
+		font-size: 13px;
+		padding: 0 10px;
+	}
+
+	.buscador button{
+		height: 50px;
+		font-size: 8px;
+	}
+
+	/******************************/
+
+	.servicios-destacados{
+		margin-top: 80px;
+	}
+
+	.servicios-destacados article{
+		float: none;
+		padding: 0 10px;
+		width: 100%
+	}
+
+	.servicios-destacados article h2{
+		font-size: 18px;
+		font-family: 'Raleway', sans-serif;
+		color: #1b1b1b;
+		font-variant: small-caps;
+	}
+
+	.servicios-destacados article p{
+		font-size: 14px;
+		font-family: 'Raleway', sans-serif;
+		color: #1b1b1b;
+	}
+
+
+/*************************************/
+
+
+.contenedor-secundario h2{
+	font-size: 32px;
+	margin: 50px 0 30px;
+}
+
+
+.contenedor-secundario h2 + p{
+	font-size: 16px;
+}
+
+
+.box-price{
+	width: 45%;
+	margin-right: 2%;
+}
+
+
+
+
+.table-text{
+	font-size: 11px;
+}
+
+/****************************/
+
+.footer1{
+	height: 150px;
+}
+
+.footer1 p{
+	font-size:18px;
+}
+
+.f1{
+	font-size: 25px;
+}
+
+.footer2{
+	font-size: 12px;
+}
+
+.footer2 p{
+	float: none;
+	width: 100%;
+	height: 40;
+	text-align: center;
+	padding: 10px 5px 0;
+
+}
+
+
+.footer2 nav{
+	float: none;
+	width: 100%;
+	height: 40px;
+	margin: 0;
+	text-align: center;
+	padding: 0 5px;
+}
+
+
+
+
+
